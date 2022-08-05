@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* HEADER AND NAVIGATION STYLING */
+.header-section {
+  border: 2px solid red;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-cta-button {
+  border: 1px solid red;
+  background: none;
+  padding: 1rem 2.5rem;
+  border-radius: 2rem;
+}
+
+.introduction-section {
+  border: 2px solid red;
+  margin: 8rem 0;
+}
+
+.introduction-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-evenly; */
+}
+
+.introduction-header {
+  padding: 2rem 4rem;
+}
+
+.introduction-text {
+  font-size: 1.6rem;
+  line-height: 2.3rem;
+  text-align: center;
+  /* padding: 0 8rem; */
+}
+
+.introduction-button {
+  margin: 2rem;
+  background: 0;
+  border: 2px solid red;
+  border-radius: 3rem;
+  padding: 1.5rem 4rem;
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  color: #000;
+}
+
+/* 
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+} */
