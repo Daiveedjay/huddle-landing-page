@@ -1,4 +1,37 @@
-.header-primary {
+.header_primary {
   font-size: 4rem;
   font-family: "Poppins", sans-serif;
+}
+
+.max_width {
+  max-width: 140rem;
+  margin: 8rem auto;
+}
+
+/* .align {
+  margin: 0 auto;
+} */
+
+.ta_c {
+  text-align: center;
+}
+
+.d_f {
+  display: flex;
+}
+
+.ai_c {
+  align-items: center;
+}
+
+.ai_s {
+  align-items: flex-start;
+}
+
+.jc_c {
+  justify-content: center;
+}
+
+.gp_5 {
+  gap: 5rem;
 }

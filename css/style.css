@@ -10,6 +10,14 @@
   padding: 0;
 }
 
+:root {
+  --primary-color: hsl(322, 100%, 66%);
+  --primary-light: hsl(321, 100%, 78%);
+  --error-color: hsl(0, 100%, 63%);
+  --light-background: hsl(207, 100%, 98%);
+  --dark-background: hsl(192, 100%, 9%);
+}
+
 html {
   font-size: 62.5%;
 }
@@ -28,22 +36,26 @@ body {
 }
 
 .nav-cta-button {
-  border: 1px solid red;
+  border: 1.5px solid var(--primary-light);
+  color: var(--primary-light);
   background: none;
   padding: 1rem 2.5rem;
   border-radius: 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
 }
 
+/* INTRODUCTION STYLING */
 .introduction-section {
-  border: 2px solid red;
-  margin: 8rem 0;
+  border: 2px solid rgb(78, 9, 9);
 }
 
 .introduction-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: space-evenly; */
 }
 
 .introduction-header {
@@ -54,13 +66,10 @@ body {
   font-size: 1.6rem;
   line-height: 2.3rem;
   text-align: center;
-  /* padding: 0 8rem; */
 }
 
-.introduction-button {
+.primary-button {
   margin: 2rem;
-  background: 0;
-  border: 2px solid red;
   border-radius: 3rem;
   padding: 1.5rem 4rem;
   font-size: 1.6rem;
@@ -68,8 +77,157 @@ body {
   font-weight: 600;
   text-decoration: none;
   color: #000;
+  color: var(--light-background);
+  background: var(--primary-color);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
+/* MOCKUP IMAGE STYLING */
+.mockup-container {
+  max-height: 100vh;
+  border: 2px solid red;
+  overflow: hidden;
+  margin: 8rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.mockup-container img {
+  width: 70%;
+}
+
+/* STATISTICS STYLING */
+.statistics-section {
+  border: 2px solid red;
+  margin: 8rem 0;
+}
+
+.statistics-container {
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.statistics-compartment {
+  border: 2px solid blue;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.statistics-figure {
+  font-size: 8rem;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+.statistics-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #c8d0d2;
+}
+
+/* ASIDE ADITIONAL STYLING */
+.additional-section {
+  margin: 8rem auto;
+  border: 2px solid red;
+  margin: 8rem inherit;
+}
+
+/* ASIDE ADITIONAL STYLING (GROW) */
+.additional-grow {
+  margin-bottom: 4rem;
+}
+
+.additional-bg-top {
+  margin-bottom: -1rem;
+}
+
+.additional-bg-top img,
+.additional-bg-bottom img {
+  width: 100%;
+  max-height: 15rem;
+}
+
+.grow-container {
+  background: var(--light-background);
+}
+/* SUB UTILITY */
+.additional-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.additional-grow .additional-text p {
+  width: 30rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.additional-text,
+.additional-image {
+  flex: 1;
+}
+
+/* SUB UTILITY */
+.additional-image img {
+  width: 70%;
+}
+
+/* ASIDE ADITIONAL STYLING (FLOWING) */
+
+.additional-flowing {
+  display: flex;
+  gap: 5rem;
+  margin-bottom: 4rem;
+}
+
+.additional-flowing .additional-text p {
+  width: 46.5rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+/* ASIDE ADITIONAL STYLING (USER) */
+.user-container {
+  background: var(--light-background);
+}
+.additional-user .additional-text h2 {
+  /* transform: translateX(-13rem); */
+  width: 100%;
+  padding: 0 10rem;
+}
+.additional-user .additional-text p {
+  width: 46.5rem;
+  width: 100%;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  padding: 0 10rem;
+}
+
+/* ASIDE ADITIONAL STYLING (BUTTON)  */
+
+.additional-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+}
+
+.additional-button h2 {
+  font-size: 3rem;
+}
+
+/* FOOTER TOP BACKGROUND IMAGE */
+.footer-bg-top img {
+  width: 100%;
+}
+/* ////////////// */
 /* 
 .attribution {
   font-size: 11px;
@@ -77,4 +235,4 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
-} */
+} */ ;
