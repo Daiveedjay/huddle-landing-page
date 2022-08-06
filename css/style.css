@@ -44,6 +44,11 @@ body {
   font-weight: 600;
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
+  transition: 0.2s all ease-in;
+}
+
+.nav-cta-button:hover {
+  box-shadow: 1px 1px 5px var(--primary-light);
 }
 
 /* INTRODUCTION STYLING */
@@ -67,7 +72,14 @@ body {
   text-decoration: none;
   color: var(--light-background);
   background: var(--primary-color);
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.2);
+  transition: 0.2s all ease-in;
+}
+
+.primary-button:hover {
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+  background: var(--primary-light);
 }
 
 /* MOCKUP IMAGE STYLING */
@@ -221,7 +233,6 @@ body {
 /* FOOTER GENERAL COMPARTMENT STYLING */
 .footer-compartment {
   flex: 1;
-  /* border: 2px solid green; */
   gap: 2rem;
   padding: 4rem;
 }
@@ -252,11 +263,17 @@ body {
 }
 
 .footer-socials a {
-  border-radius: 5px;
-  border: #fff solid 1px;
+  border-radius: 50%;
+  border: #fff solid 1.5px;
   color: #fff;
   width: 3rem;
   height: 3rem;
+  transition: all 0.2s ease-in;
+}
+
+.footer-socials a:hover {
+  border-color: var(--primary-light);
+  color: var(--primary-light);
 }
 
 /* FOOTER RIGHT COMPARTMENT STYLING */
@@ -270,8 +287,8 @@ body {
   gap: 2rem;
 }
 .footer-compartment:nth-child(2) input {
-  padding: 1rem 0;
-  border: none;
+  padding: 1rem;
+  border: 1.5px solid transparent;
   border-radius: 5px;
   grid-column: 1 / span 4;
 }
@@ -286,16 +303,38 @@ body {
   border-radius: 5px;
   letter-spacing: 0.5px;
   grid-column: 5 / span 1;
+  transition: all 0.2 ease-in;
 }
 
+.email-input:focus {
+  outline: hsl(0, 6%, 24%) 1px solid;
+}
+
+.footer-compartment:nth-child(2) form button:hover {
+  background: var(--primary-light);
+}
+
+/* JAVASCRIPT CLASSES USED TO MANIPULATE THE VALIDATION  */
 .error-message {
   position: absolute;
   bottom: -2rem;
   left: 5px;
-  color: red;
+  color: #fff;
 }
-/* ////////////// */
 
+.error {
+  color: var(--error-color);
+}
+
+.error-border {
+  border: 1.5px solid var(--error-color) !important;
+}
+
+.form-correct {
+  color: transparent;
+}
+
+/* ATTRIBUTION STYLING */
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -305,8 +344,12 @@ body {
 }
 .attribution a {
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 12px;
   font-weight: 600;
   text-decoration: none;
   color: var(--primary-light);
+}
+
+.attribution a:hover {
+  text-decoration: underline;
 }

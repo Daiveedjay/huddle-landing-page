@@ -1,3 +1,5 @@
+/* ALL UTILITY CLASSES ARE MARKED WITH UBDERSCORE */
+
 .header_primary {
   font-size: 4rem;
   font-family: "Poppins", sans-serif;
@@ -7,10 +9,6 @@
   max-width: 140rem;
   margin: 8rem auto;
 }
-
-/* .align {
-  margin: 0 auto;
-} */
 
 .ta_c {
   text-align: center;

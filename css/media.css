@@ -54,6 +54,10 @@
     /* 7px per rem */
     font-size: 43.75%;
   }
+
+  .nav-cta-button {
+    font-size: 1.6rem;
+  }
 }
 
 /* 730px and below */
@@ -62,9 +66,16 @@
     /* 6px per rem */
     font-size: 37.5%;
   }
+
+  .introduction-text {
+    font-size: 2rem;
+  }
   .statistics-container {
     flex-direction: column;
     row-gap: 8rem;
+  }
+  .statistics-compartment:nth-child(2) .statistics-text {
+    text-align: left;
   }
 
   .grow-container {
@@ -78,7 +89,16 @@
   .additional-grow .additional-text p {
     width: 50rem;
     text-align: center;
+    font-size: 1.6rem;
   }
+  .additional-flowing .additional-text p {
+    font-size: 1.6rem;
+  }
+
+  .additional-user .additional-text p {
+    font-size: 1.6rem;
+  }
+
   .additional-flowing .align-container {
     flex-direction: column;
   }
@@ -108,15 +128,36 @@
     flex-direction: column-reverse;
   }
 
+  .footer-compartment:nth-child(2) h3 {
+    font-size: 3rem;
+  }
+
+  .footer-text {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+
   .footer-compartment:nth-child(2) form {
     grid-template-rows: 1fr 1fr;
   }
   .footer-compartment:nth-child(2) form button {
     grid-column: 3 / span 2;
     grid-row: 2 / span 1;
+    font-size: 1.6rem;
   }
+
+  .footer-section a {
+    font-size: 1.4rem;
+  }
+
+  .footer-socials a {
+    border: none;
+    font-size: 2rem;
+  }
+
   .error-message {
     bottom: 4rem;
+    font-size: 1.5rem;
   }
 }
 /* 625px and below */
@@ -128,12 +169,60 @@
   .header-section .logo img {
     width: 30rem;
   }
+  .additional-grow .additional-text p {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .additional-flowing .additional-text p {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .additional-user .additional-text p {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .footer-compartment:nth-child(2) form button {
+    font-size: 2rem;
+  }
+
+  .footer-phone img,
+  .footer-email img {
+    width: 2rem;
+  }
+
+  .footer-section a {
+    font-size: 2rem;
+  }
+
+  .footer-socials a {
+    font-size: 3rem;
+  }
+
+  .footer-text {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    width: 50rem;
+  }
+
+  .error-message {
+    font-size: 1.8rem;
+  }
 }
 /* 565px and below */
 @media (max-width: 35.3125em) {
   html {
     /* 4px per rem */
     font-size: 25%;
+  }
+  .introduction-text {
+    font-size: 2.25rem;
+    line-height: 3rem;
+  }
+
+  .statistics-text {
+    font-size: 2.5rem;
   }
 }
 /* 500px and below */
@@ -155,10 +244,32 @@
   }
 }
 
+/* 370px and below */
+@media (max-width: 23.125em) {
+  /* .introduction-container .header_primary {
+    font-size: 3.5rem;
+  } */
+}
+/* 330px and below */
+@media (max-width: 20.625em) {
+  /* .introduction-container .header_primary {
+    font-size: 3.3rem;
+  } */
+}
 /* 315px and below */
 @media (max-width: 19.6875em) {
   html {
     /* 3px per rem */
     font-size: 18.75%;
+  }
+  .introduction-text {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .primary-button {
+    margin: 4rem;
+    padding: 2rem 6rem;
+    font-size: 2rem;
   }
 }
