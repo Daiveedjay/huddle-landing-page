@@ -20,6 +20,10 @@
   display: flex;
 }
 
+.d_g {
+  display: grid;
+}
+
 .ai_c {
   align-items: center;
 }
@@ -31,7 +35,22 @@
 .jc_c {
   justify-content: center;
 }
+.fd_c {
+  flex-direction: column;
+}
 
 .gp_5 {
   gap: 5rem;
+}
+
+.bg_neutral {
+  background: #fff;
+}
+
+.bg_light {
+  background: var(--light-background);
+}
+
+button[type="submit"] {
+  cursor: pointer;
 }
