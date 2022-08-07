@@ -16,6 +16,8 @@
   --error-color: hsl(0, 100%, 63%);
   --light-background: hsl(207, 100%, 98%);
   --dark-background: hsl(192, 100%, 9%);
+  --neutral-color: hsl(0, 0%, 100%);
+  scroll-behavior: smooth;
 }
 
 html {
@@ -39,7 +41,7 @@ body {
   color: var(--primary-light);
   background: none;
   padding: 1rem 2.5rem;
-  border-radius: 2rem;
+  border-radius: 20px;
   font-size: 1.2rem;
   font-weight: 600;
   text-decoration: none;
@@ -52,7 +54,6 @@ body {
 }
 
 /* INTRODUCTION STYLING */
-
 .introduction-header {
   padding: 2rem 4rem;
 }
@@ -64,7 +65,7 @@ body {
 
 .primary-button {
   margin: 2rem;
-  border-radius: 3rem;
+  border-radius: 30px;
   padding: 1.5rem 4rem;
   font-size: 1.6rem;
   font-family: "Open Sans", sans-serif;
@@ -151,8 +152,6 @@ body {
 
 .additional-grow .additional-text p {
   width: 30rem;
-  font-size: 1.2rem;
-  line-height: 2rem;
 }
 
 .additional-text,
@@ -174,8 +173,6 @@ body {
 
 .additional-flowing .additional-text p {
   width: 46.5rem;
-  font-size: 1.2rem;
-  line-height: 2rem;
 }
 
 /* ASIDE ADITIONAL STYLING (USER) */
@@ -192,8 +189,6 @@ body {
 }
 .additional-user .additional-text p {
   width: 100%;
-  font-size: 1.2rem;
-  line-height: 2rem;
 }
 
 .additional-user .align-container {
@@ -254,7 +249,7 @@ body {
 }
 .footer-section a {
   text-decoration: none;
-  color: #fff;
+  color: var(--neutral-color);
 }
 
 .footer-socials {
@@ -264,8 +259,8 @@ body {
 
 .footer-socials a {
   border-radius: 50%;
-  border: #fff solid 1.5px;
-  color: #fff;
+  border: var(--neutral-color) solid 1.5px;
+  color: var(--neutral-color);
   width: 3rem;
   height: 3rem;
   transition: all 0.2s ease-in;
@@ -296,7 +291,7 @@ body {
 .footer-compartment:nth-child(2) form button {
   border: none;
   background: var(--primary-color);
-  color: #fff;
+  color: var(--neutral-color);
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 1.2rem;
@@ -319,7 +314,7 @@ body {
   position: absolute;
   bottom: -2rem;
   left: 5px;
-  color: #fff;
+  color: transparent;
 }
 
 .error {
@@ -339,11 +334,12 @@ body {
   font-size: 11px;
   text-align: center;
   background: var(--dark-background);
-  color: #fff;
+  color: var(--neutral-color);
   padding: 2rem;
+  margin-top: -1rem;
 }
 .attribution a {
-  color: #fff;
+  color: var(--neutral-color);
   font-size: 12px;
   font-weight: 600;
   text-decoration: none;
@@ -352,4 +348,21 @@ body {
 
 .attribution a:hover {
   text-decoration: underline;
+}
+
+#backToTop {
+  display: none;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 2;
+  border: none;
+  outline: none;
+  background-color: var(--primary-light);
+  border-radius: 50%;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 20px;
 }

@@ -47,6 +47,30 @@
     /* 8px per rem */
     font-size: 50%;
   }
+
+  .nav-cta-button {
+    font-size: 1.4rem;
+  }
+  .introduction-text {
+    font-size: 2.25rem;
+    line-height: 3.5rem;
+  }
+  .text_primary {
+    font-size: 1.6rem !important;
+    line-height: 2.25rem !important;
+  }
+  .footer-text {
+    width: 40rem;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+  }
+
+  .footer-section a {
+    font-size: 1.4rem;
+  }
+  .error-message {
+    font-size: 1.4rem;
+  }
 }
 /* 830px and below */
 @media (max-width: 51.88em) {
@@ -57,6 +81,11 @@
 
   .nav-cta-button {
     font-size: 1.6rem;
+  }
+
+  .text_primary {
+    font-size: 1.8rem !important;
+    line-height: 3rem !important;
   }
 }
 
@@ -100,17 +129,16 @@
     justify-content: center;
   }
 
+  .text_primary {
+    font-size: 2.25rem !important;
+    line-height: 3.2rem !important;
+  }
+
   .additional-grow .additional-text p {
     width: 50rem;
     text-align: center;
-    font-size: 1.6rem;
   }
-  .additional-flowing .additional-text p {
-    font-size: 1.6rem;
-  }
-
   .additional-user .additional-text p {
-    font-size: 1.6rem;
     width: 50rem;
     text-align: center;
   }
@@ -188,20 +216,19 @@
   .nav-cta-button {
     font-size: 2rem;
   }
+
+  .text_primary {
+    font-size: 2.75rem !important;
+    line-height: 4rem !important;
+  }
   .additional-grow .additional-text p {
-    font-size: 2.75rem;
-    line-height: 4rem;
     width: 70rem;
   }
   .additional-flowing .additional-text p {
-    font-size: 2.75rem;
-    line-height: 4rem;
     width: 70rem;
   }
 
   .additional-user .additional-text p {
-    font-size: 2.75rem;
-    line-height: 4rem;
     width: 70rem;
   }
 
@@ -223,9 +250,9 @@
   }
 
   .footer-text {
-    font-size: 1.8rem;
-    line-height: 2.4rem;
-    width: 50rem;
+    font-size: 2rem;
+    line-height: 2.6rem;
+    width: 60rem;
   }
 
   .error-message {
@@ -238,35 +265,34 @@
     /* 4px per rem */
     font-size: 25%;
   }
+  .nav-cta-button {
+    font-size: 2.5rem;
+  }
   .introduction-text {
-    font-size: 3rem;
-    line-height: 3.5rem;
-    padding: 0 3rem;
+    font-size: 3.5rem;
+    line-height: 4.5rem;
+    padding: 0 6rem;
+  }
+
+  .primary-button {
+    font-size: 2.5rem;
+    margin: 4rem;
+    padding: 2rem 4rem;
   }
 
   .statistics-text {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
-  .additional-grow .additional-text p {
-    /* width: 50rem;
-    text-align: center; */
-    font-size: 2.25rem;
-    line-height: 3rem;
+  .header_primary {
+    font-size: 7rem !important;
   }
-  .additional-flowing .additional-text p {
-    font-size: 2.25rem;
-    line-height: 3rem;
-  }
-
-  .additional-user .additional-text p {
-    font-size: 2.25rem;
-    line-height: 3rem;
-    /* width: 50rem;
-    text-align: center; */
+  .text_primary {
+    font-size: 3.2rem !important;
+    line-height: 4.5rem !important;
   }
 
   .additional-button h2 {
-    font-size: 4rem;
+    font-size: 6rem;
   }
   .footer-compartment:nth-child(2) h3 {
     font-size: 4rem;
@@ -300,12 +326,28 @@
 }
 /* 500px and below */
 @media (max-width: 31.25em) {
+  .line-break {
+    display: none;
+  }
+  .statistics-icon {
+    display: flex;
+    justify-content: center;
+  }
+
+  .statistics-figure {
+    display: flex;
+    justify-content: center;
+  }
+  .statistics-compartment:nth-child(2) .statistics-text {
+    text-align: center;
+  }
   .footer-compartment:nth-child(2) form {
     grid-template-columns: 1fr 1fr 1fr 1.5fr;
   }
   .footer-compartment:nth-child(2) form button {
     grid-column: 4 / span 1;
     grid-row: 2 / span 1;
+    font-size: 2.5rem;
   }
   .footer-text {
     width: 100%;
@@ -315,19 +357,54 @@
   .footer-section .footer-logo img {
     width: 30rem;
   }
+  #backToTop {
+    bottom: 7rem;
+  }
 }
 
-/* 370px and below */
-@media (max-width: 23.125em) {
-  /* .introduction-container .header_primary {
+/* 350px and below */
+@media (max-width: 21.5625em) {
+  html {
+    /* 3px per rem */
+    font-size: 18.75%;
+  }
+
+  .introduction-text {
+    font-size: 4rem;
+    line-height: 6rem;
+    padding: 0 5rem;
+  }
+  .primary-button {
+    font-size: 3rem;
+    margin: 4rem;
+    padding: 2.5rem 4.5rem;
+  }
+
+  .statistics-text {
     font-size: 3.5rem;
-  } */
-}
-/* 330px and below */
-@media (max-width: 20.625em) {
-  /* .introduction-container .header_primary {
-    font-size: 3.3rem;
-  } */
+  }
+
+  .text_primary {
+    font-size: 3.5rem !important;
+    line-height: 5rem !important;
+  }
+
+  .footer-text {
+    font-size: 3rem;
+    width: 80rem;
+    line-height: 4.5rem;
+  }
+
+  .footer-section a {
+    font-size: 3rem;
+  }
+
+  .footer-socials a {
+    font-size: 4rem;
+  }
+  .error-message {
+    font-size: 3rem;
+  }
 }
 /* 315px and below */
 @media (max-width: 19.6875em) {
@@ -336,13 +413,13 @@
     font-size: 18.75%;
   }
   .introduction-text {
-    font-size: 2.5rem;
-    line-height: 3rem;
+    font-size: 3.5rem !important;
+    line-height: 5rem !important;
   }
 
   .primary-button {
-    margin: 4rem;
+    margin: 5rem;
     padding: 2rem 6rem;
-    font-size: 2rem;
+    font-size: 3rem;
   }
 }
